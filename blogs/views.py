@@ -17,4 +17,4 @@ def api_blogs(request):
     if request.method=='GET':
         cards = Blog.objects.all()
         serializers = BlogSerializer(cards, many=True)
-        return Response(serializers.data)
+        return Response(serializers.data)   
